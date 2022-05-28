@@ -1,15 +1,15 @@
 import React from "react";
 //import components
-import ToDo from "./ToDo";
+import ToDo from "./Todo";
 
-function ToDoList() {
+const TodoList = ({todos}) => {
+  console.log(todos);
   return (
     <div className="todo-container">
       <ul className="todo-list">
-        <ToDo />
       </ul>
     </div>
   );
 }
 
-export default ToDoList;
+export default TodoList;

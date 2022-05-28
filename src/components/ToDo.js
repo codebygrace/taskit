@@ -1,6 +1,6 @@
 import React from "react";
 
-const ToDo = () => {
+const Todo = () => {
   return (
     <div className="todo">
       <li className="todo-item">Task #1</li>
@@ -10,4 +10,4 @@ const ToDo = () => {
   );
 }
 
-export default ToDo;
+export default Todo;
