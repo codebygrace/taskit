@@ -1,0 +1,37 @@
+body {
+  background-color: #E18DFF;
+  font-size: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+/* TASK INPUT */
+.todo-form {
+  margin: 0 auto;
+}
+
+.todo-input {
+  padding: 5px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+.todo-btn {
+  padding: 5px 7px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  color: #FFFFFF;
+  background-color: #D45CFF;
+  font-size: 20px;
+}
+
+.todo-btn:hover {
+  background-color: #A82FD4;
+  cursor: pointer;
+}
+
+/* TASK LIST */
