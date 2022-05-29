@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './App.css';
-//importing components
+
 import Form from './components/Form';
 import TodoList from './components/TodoList';
 

@@ -2,16 +2,19 @@ import React from "react";
 
 const Form = ({setInputText, todos, setTodos, inputText}) => {
   const inputTextHandler = (e) => {
-    console.log(e.target.value);
     setInputText(e.target.value);
   };
   const submitTodoHandler = (e) => {
     e.preventDefault();
-    setTodos([
-      ...todos, 
-      {text: inputText, completed: false, id: Math.random() * 1000}
-    ]); 
-    setInputText("");
+    if(inputText === ""){
+      alert("No empty tasks allowed");
+    } else {
+      setTodos([
+        ...todos, 
+        {text: inputText, completed: false, id: Math.random() * 1000}
+      ]); 
+      setInputText("");
+    }
   }
   return (
     <form>
@@ -19,7 +22,8 @@ const Form = ({setInputText, todos, setTodos, inputText}) => {
       value={inputText} 
       onChange={inputTextHandler} 
       type="text" 
-      className="todo-input"></input>
+      className="todo-input"
+      placeholder="add a task"></input>
       <button onClick={submitTodoHandler} className="todo-btn" type="submit">
         <i className="fa-solid fa-plus"></i>
       </button>
