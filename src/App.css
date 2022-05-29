@@ -35,3 +35,44 @@ ul {
 }
 
 /* TASK LIST */
+.todo {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.todo-item {
+  padding: 5px;
+  background-color: #FFFFFF;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  width: 75%;
+}
+
+.complete-btn, .trash-btn {
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-left: 5px;
+  color: #FFFFFF;
+}
+
+.complete-btn {
+  background-color: #FF6464;
+}
+
+.trash-btn {
+  background-color: #63C65A;
+}
+
+.complete-btn:hover, .trash-btn:hover {
+  cursor: pointer;
+}
+
+.complete-btn:hover {
+  background-color: #FF3434;
+}
+
+.trash-btn:hover {
+  background-color: #30B024;
+}
