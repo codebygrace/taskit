@@ -1,6 +1,13 @@
-body {
-  background-color: #E18DFF;
+* {
+  font-family: 'Nunito', sans-serif;
   font-size: 20px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-weight: 300;
+}
+
+body {
+  background-color: #EFE5DC;
 }
 
 ul {
@@ -14,23 +21,17 @@ ul {
 
 .todo-input {
   padding: 5px;
-  border: 1px solid transparent;
-  border-radius: 5px;
   margin-right: 5px;
-  font-size: 20px;
 }
 
 .todo-btn {
-  padding: 5px 7px;
-  border: 1px solid transparent;
-  border-radius: 5px;
+  padding: 5px 10px;
   color: #FFFFFF;
-  background-color: #D45CFF;
-  font-size: 20px;
+  background-color: #6D6A75;
 }
 
 .todo-btn:hover {
-  background-color: #A82FD4;
+  background-color: #37323E;
   cursor: pointer;
 }
 
@@ -43,16 +44,11 @@ ul {
 .todo-item {
   padding: 5px;
   background-color: #FFFFFF;
-  border: 1px solid transparent;
-  border-radius: 5px;
   width: 75%;
 }
 
 .complete-btn, .trash-btn {
   padding: 5px 10px;
-  border: 1px solid transparent;
-  border-radius: 5px;
-  font-size: 20px;
   margin-left: 5px;
   color: #FFFFFF;
 }
@@ -75,4 +71,9 @@ ul {
 
 .trash-btn:hover {
   background-color: #30B024;
+}
+
+.completed {
+  opacity: 60%;
+  text-decoration: line-through;
 }

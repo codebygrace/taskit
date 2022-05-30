@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>taskit - a to-do list app</h1>
+        <h1 className="title">taskit</h1>
       </header>
       <Form inputText={inputText} todos={todos} setTodos={setTodos} setInputText={setInputText}/>
       <TodoList setTodos={setTodos} todos={todos}/>
