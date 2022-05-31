@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import './App.css';
 
+import Navbar from './components/Navbar';
 import Form from './components/Form';
 import TodoList from './components/TodoList';
 
@@ -9,9 +10,7 @@ function App() {
   const[todos, setTodos] = useState([]);
   return (
     <div className="App">
-      <header>
-        <h1 className="title">taskit</h1>
-      </header>
+      <Navbar/>
       <Form inputText={inputText} todos={todos} setTodos={setTodos} setInputText={setInputText}/>
       <TodoList setTodos={setTodos} todos={todos}/>
     </div>
