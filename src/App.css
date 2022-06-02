@@ -14,6 +14,18 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: #6D6A75;
+}
+
+button {
+  padding: 5px 10px;
+}
+
+/* NAVBAR */
+
+
 /* TASK INPUT */
 .todo-form {
   margin: 0 auto;
@@ -26,7 +38,6 @@ ul {
 }
 
 .todo-btn {
-  padding: 5px 10px;
   color: #FFFFFF;
   background-color: #6D6A75;
 }
@@ -50,7 +61,6 @@ ul {
 }
 
 .complete-btn, .trash-btn {
-  padding: 5px 10px;
   margin-left: 5px;
   color: #FFFFFF;
 }
