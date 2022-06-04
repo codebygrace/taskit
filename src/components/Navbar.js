@@ -9,7 +9,7 @@ function Navbar () {
 
   return (
     <div className="navbar">
-      <a href="../App.js" className="logo">taskit</a>
+      <h3 className="logo"><a href="../App.js" className="logo-link">taskit</a></h3>
       <ul className="nav-list" ref={navRef}>
         <li className="nav-item">
           <a href="../App.js" className="nav-link">Home</a>
@@ -17,11 +17,8 @@ function Navbar () {
         <li className="nav-item">
           <a href="../Contact.js" className="nav-link">Contact</a>
         </li>
-        <button onClick={showNavbar} className="close-btn">
-          <i class="fa-solid fa-xmark"></i>
-        </button>
       </ul>
-      <button onClick={showNavbar} className="hamburger-btn">
+      <button onClick={showNavbar} className="nav-btn">
         <i class="fa-solid fa-bars"></i>
       </button>
     </div>
