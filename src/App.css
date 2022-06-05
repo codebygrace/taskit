@@ -66,7 +66,9 @@ button:hover {
 
 /* TASK INPUT */
 .todo-form {
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin: 15px 5px 10px;
 }
 
 .todo-input {
@@ -85,8 +87,13 @@ button:hover {
 }
 
 /* TASK LIST */
+.todo-list {
+  padding: 0;
+}
+
 .todo {
   display: flex;
+  justify-content: center;
   margin-bottom: 1rem;
 }
 
@@ -120,4 +127,49 @@ button:hover {
 .completed {
   opacity: 60%;
   text-decoration: line-through;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 768px) {
+  /* NAVBAR */  
+  .nav-btn {
+  visibility: visible;
+  opacity: 1;
+  }
+
+  .nav-list {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    gap: 1.5rem;
+    background-color: #6D6A75;
+    transition: 0.5s;
+    transform: translateY(-100vh);
+    z-index: 1;
+  }
+
+  .responsive-nav {
+    transform: none;
+  }
+
+  .nav-btn {
+    position: absolute;
+    top: 1rem;
+    right: 10rem;
+    z-index: 2;
+  }
+
+  /* TASK LIST */
+  .todo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
 }
