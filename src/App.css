@@ -32,35 +32,16 @@ button:hover {
   cursor: pointer;
 }
 
-/* NAVBAR */
-.navbar {
-  display: flex;
+/* HEADER */
+.header {
   background: #6D6A75;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   border-radius: 0;
 }
 
 .logo-link {
   font-size: 30px;
   font-weight: 500;
-}
-
-.nav-list {
-  display: flex;
-  align-items: center;
-}
-
-.nav-item {
-  padding-right: 1rem;
-}
-
-.nav-btn {
-  background: transparent;
-  border: none;
-  outline: none;
-  visibility: hidden;
-  opacity: 0;
 }
 
 /* TASK INPUT */
@@ -130,38 +111,6 @@ button:hover {
 
 /* MEDIA QUERIES */
 @media only screen and (max-width: 768px) {
-  /* NAVBAR */  
-  .navbar {
-    justify-content: space-evenly;
-  }
-
-  .nav-list {
-    position: fixed; 
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    gap: 1.5rem;
-    background-color: #6D6A75;
-    transition: 0.5s;
-    transform: translateY(-100vh);
-    z-index: 1;
-  }
-
-  .responsive-nav {
-    transform: none;
-  }
-
-  .nav-btn {
-    visibility: visible;
-    opacity: 1;
-    z-index: 2;
-  }
-
   /* TASK LIST */
   .todo {
     display: flex;
@@ -193,7 +142,7 @@ button:hover {
     font-size: 10px;
   }
 
-  /* NAVBAR */
+  /* HEADER */
   .logo-link {
     font-size: 15px;
   }
