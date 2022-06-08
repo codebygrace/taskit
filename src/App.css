@@ -48,22 +48,61 @@ button:hover {
 .todo-form {
   display: flex;
   justify-content: center;
+  gap: 5px;
   margin: 15px 5px 10px;
 }
 
 .todo-input {
   padding: 5px;
-  margin-right: 5px;
   border: 2px solid #6D6A75;
 }
 
 .todo-btn {
   background-color: #6D6A75;
+  margin-right: 10px;
 }
 
 .todo-btn:hover {
   background-color: #37323E;
   cursor: pointer;
+}
+
+.filter-todo {
+  padding: 5px;
+  background: #FFFFFF;
+  width: 8rem;
+}
+
+.select {
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #6D6A75;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  background: #6D6A75;
+  color: #FFFFFF;
+  top: 0;
+  right: 0;
+  padding: 5px;
+  pointer-events: none;
+  transition: all 0.2s ease;
+}
+
+.select:hover::after {
+  background-color: #37323E;
 }
 
 /* TASK LIST */
