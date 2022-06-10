@@ -39,7 +39,7 @@ button:hover {
   border-radius: 0;
 }
 
-.logo-link {
+.logo {
   font-size: 30px;
   font-weight: 500;
 }
@@ -188,7 +188,7 @@ select {
     font-size: 15px;
   }
 
-  .logo-link {
+  .logo {
     font-size: 25px;
   }
 
@@ -238,7 +238,7 @@ select {
   }
 
   /* HEADER */
-  .logo-link {
+  .logo {
     font-size: 15px;
   }
   
