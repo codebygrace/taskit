@@ -42,6 +42,8 @@ button:hover {
 .logo {
   font-size: 30px;
   font-weight: 500;
+  color: #FFFFFF;
+  margin-top: 0;
 }
 
 /* TASK INPUT */
