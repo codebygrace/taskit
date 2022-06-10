@@ -13,8 +13,9 @@ function App() {
 
   useEffect(() => {
     filterHandler();
+    //eslint-disable-next-line react-hooks/exhaustive-deps
   }, [todos, status]);
-
+  
   const filterHandler = () => {
     switch(status) {
       case 'completed':
