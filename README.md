@@ -1,7 +1,7 @@
 # taskit by Grace Mills
 
 ## Hosting Link
-
+This app is hosted on Netlify: [here](https://taskittracker.netlify.app/).
 
 ## Description and Usage
 The purpose of this project is to showcase my ability to build an app using React by creating a task tracking app. The app offers task tracking functionality with a filtering functionality, so users can see their by the categories "all", "completed", and "uncompleted". However, the app does not offer local storage, meaning the tasks are erased on refresh. 
